@@ -45,7 +45,7 @@ else:
     model_config = OpenAIModelConfiguration(
         type="openai",
         api_key=os.environ["OPENAI_API_KEY"],
-        model=os.environ.get("OPENAI_MODEL", "gpt-4.1-mini"),
+        model=os.environ.get("OPENAI_MODEL", "gpt-5.4"),
     )
 
 # Opcional: Establece AZURE_AI_PROJECT en .env para registrar resultados en Azure AI Foundry.

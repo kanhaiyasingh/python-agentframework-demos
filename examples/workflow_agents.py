@@ -34,7 +34,7 @@ if API_HOST == "azure":
         model=os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT"],
     )
 else:
-    client = OpenAIChatClient(api_key=os.environ["OPENAI_API_KEY"], model=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"))
+    client = OpenAIChatClient(api_key=os.environ["OPENAI_API_KEY"], model=os.environ.get("OPENAI_MODEL", "gpt-5.4"))
 
 # Create AI agents — these are passed directly as executors to WorkflowBuilder,
 # exactly like the Python Executor subclasses in workflow_rag_ingest.py.

@@ -21,7 +21,7 @@ if API_HOST == "azure":
     MODEL_NAME = os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT"]
 else:
     client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    MODEL_NAME = os.environ.get("OPENAI_MODEL", "gpt-4.1-mini")
+    MODEL_NAME = os.environ.get("OPENAI_MODEL", "gpt-5.4")
 
 
 def lookup_weather(city_name: str | None = None, zip_code: str | None = None) -> dict:

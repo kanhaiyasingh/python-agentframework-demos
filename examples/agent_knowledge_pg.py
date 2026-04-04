@@ -77,7 +77,7 @@ if API_HOST == "azure":
     embed_model = os.environ.get("AZURE_OPENAI_EMBEDDING_DEPLOYMENT", "text-embedding-3-small")
 else:
     chat_client = OpenAIChatClient(
-        api_key=os.environ["OPENAI_API_KEY"], model=os.environ.get("OPENAI_MODEL", "gpt-4.1-mini")
+        api_key=os.environ["OPENAI_API_KEY"], model=os.environ.get("OPENAI_MODEL", "gpt-5.4")
     )
     embed_client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     embed_model = "text-embedding-3-small"

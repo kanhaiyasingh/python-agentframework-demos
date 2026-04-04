@@ -98,7 +98,7 @@ These examples can be run with Azure AI Foundry or OpenAI.com, depending on the 
 
 ## Using Azure AI Foundry models
 
-This project includes infrastructure as code (IaC) to provision Azure OpenAI deployments of "gpt-5-mini" and "text-embedding-3-large" via Azure AI Foundry. The IaC is defined in the `infra` directory and uses the Azure Developer CLI to provision the resources.
+This project includes infrastructure as code (IaC) to provision Azure OpenAI deployments of "gpt-5.4" and "text-embedding-3-large" via Azure AI Foundry. The IaC is defined in the `infra` directory and uses the Azure Developer CLI to provision the resources.
 
 1. Make sure the [Azure Developer CLI (azd)](https://aka.ms/install-azd) is installed.
 

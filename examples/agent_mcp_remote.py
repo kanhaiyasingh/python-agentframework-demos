@@ -31,7 +31,7 @@ if API_HOST == "azure":
 else:
     client = OpenAIChatClient(
         api_key=os.environ["OPENAI_API_KEY"],
-        model=os.environ.get("OPENAI_MODEL", "gpt-4.1-mini"),
+        model=os.environ.get("OPENAI_MODEL", "gpt-5.4"),
     )
 
 
